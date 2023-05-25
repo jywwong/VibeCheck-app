@@ -1,13 +1,14 @@
 import Business from './Business';
+import React from 'react';
 
-function BusinessList () {
-    return (
+const BusinessList = ({businesses}) => {
+  return(
     <div>
-      <Business/>
-      <Business/>
-      <Business/>
+      {businesses.map ((business) => {
+        return <Business business={business} key={business.name}/>;
+      })}
       </div>
-            );
+      );
     };
 
 export default BusinessList;
