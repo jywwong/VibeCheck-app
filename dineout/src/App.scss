@@ -1,0 +1,39 @@
+@mixin topbanner {
+  padding: 0.66rem 0;
+  text-align: center;
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  font-family: Poppins, sans-serif;
+  margin: 0;
+}
+
+* {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 560px) {
+  * {
+    font-size: 15px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.App {
+  font-family: "Work Sans", sans-serif;
+h1 {
+  @include topbanner;
+  font-size: 1.8rem;
+  color: #0f0cc3eb;
+}
+
+p {
+  @include topbanner;
+  font-size: 0.9rem;
+  color: #f4f4f8eb;
+}
+
+}

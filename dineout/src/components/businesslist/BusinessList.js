@@ -1,4 +1,4 @@
-import Business from './Business';
+import Business from '../business/Business';
 import React from 'react';
 
 const BusinessList = ({businesses}) => {
