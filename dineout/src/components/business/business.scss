@@ -1,0 +1,57 @@
+.business-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16.66rem;
+    margin: 0 0.5rem 2.3rem 0.5rem;
+
+    .imagecontainer {
+    height: 16.66rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background: #000;
+        img {
+            width: 100%
+        }
+    }
+
+    .name {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .business_details {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-size: 0.88rem;
+            font-weight: 300;
+            line-height: 1rem;
+            margin: 0;
+        }
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .ratingsandreviews {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: right;
+
+            .rating {
+                color: rgba(148,187,233,1);
+                font-weight: 600;
+                font-size: 0.88rem;
+                line-height: 1rem;
+            }
+        }
+    }
+}

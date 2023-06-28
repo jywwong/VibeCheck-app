@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from './SearchBar.scss';
+import SearchBarStyle from './SearchBarStyle.scss';
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -15,7 +15,7 @@ const SearchBar = ({searchYelp}) => {
 
   const getSortByClass = (sortByOption) => {
     if (sortBy === sortByOption) {
-      return styles.active;
+      return sortByOption;
     }
     return "";
   };
@@ -55,19 +55,21 @@ const handleLocation =
 };
 
 return (
-<div className={styles.SearchBar}>
-<div className={styles.SearchBarSortOptions}>
+<div className="SearchComponent">
+<div className={SearchBar}>
+<div className="SearchBarSortOptions">
 <ul>{renderSortByOptions()}</ul>
 </div>
 <form onSubmit= {handleSearch}>
-<div className={styles.SearchBarFields}>
+<div className="SearchBarFields">
 <input type="text" className="searchterm" placeholder="Japanese" onChange={handleSearchTerm} />
 <input type="text" className="location" placeholder="London" onChange={handleLocation}/>
 </div>
-<div className={styles.SearchBarSubmit}>
+<div className="submit">
 <button type="submit">Search</button>
 </div>
 </form>
+</div>
 </div>
 );
 };

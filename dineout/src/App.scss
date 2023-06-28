@@ -24,10 +24,11 @@ input:focus {
 
 .App {
   font-family: "Work Sans", sans-serif;
+
 h1 {
   @include topbanner;
   font-size: 1.8rem;
-  color: #0f0cc3eb;
+  color: rgb(73, 43, 220);
 }
 
 p {

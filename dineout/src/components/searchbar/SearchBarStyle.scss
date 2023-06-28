@@ -1,0 +1,95 @@
+.SearchComponent {
+     display: flex;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+
+  ul {
+display: flex;
+  justify-content: center;
+  margin-bottom: 2.22rem;
+  color: #eaeaebeb;
+}
+
+.SearchBarSortOptions li {
+  cursor: pointer;
+  width: 4.33rem;
+  border-bottom: 1px solid #fff;
+  padding: 0 2.58rem 0.33rem 2.58rem;
+  line-height: 1.13;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.83rem;
+  transition: color 0.25s;
+  list-style: none;
+}
+
+&:hover {
+  color: #d4cfcf;
+}
+
+&:active {
+  color: #d4cfcf;
+}
+
+&:active:hover {
+  border-bottom: 1px solid #f0c36c;
+  color: #f0c36c;
+}
+
+.SearchBarFields {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.88rem;
+
+  input {
+    width: 21rem;
+    padding: 0.66rem 1rem;
+    margin-right: 2.22rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 0.77rem;
+    font-weight: 500;
+  }
+}
+
+.submit {
+  text-align: center;
+
+  button {
+  border-radius: 4px;
+  padding: 0.72rem 1.7rem;
+  background-color: rgb(238,174,202);
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 0.5s;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(148,187,233,1);
+  }
+}
+}
+}
+
+@media only screen and (max-width: 560px) {
+
+  .SearchComponent ul {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .SearchBarFields {
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      margin-right: 0;
+      margin-bottom: 0.86rem;
+    }
+  }
+}

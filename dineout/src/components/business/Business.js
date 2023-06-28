@@ -10,12 +10,18 @@
     alt=""
      />
      </div>
-     <p className='name'>Name: {business.name}</p>
-     <p className='address'>Address: {business.address}</p>
-    <p className='city'>City: {business.city}</p>
-    <p className='category'>Category: {business.category}</p>
-    <p className='rating' key='rating' value=''>Rating: {business.rating}</p>
-    <p className='reviewCount' key='reviewcount' value=''>Number of reviews: {business.reviewCount}</p>
+     <p className='name'>{business.name}</p>
+     <div className="business_details">
+     <div className='location'>
+     <p className='address'>{business.address}</p>
+    <p className='city'>{business.city}</p>
+    <p className='category'>{business.category.toUpperCase()}</p>
+    </div>
+    <div className='ratingsandreviews'>
+    <p className='rating' key='rating' value=''>{business.rating} stars</p>
+    <p className='reviewCount' key='reviewcount' value=''>{business.reviewCount} reviews</p>
+    </div>
+     </div>
      </div>
     );
 }

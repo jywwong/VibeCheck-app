@@ -1,11 +1,12 @@
 import Business from '../business/Business';
 import React from 'react';
+import styles from './businesslist.scss'
 
 const BusinessList = ({businesses}) => {
   return(
-    <div>
+    <div classname="businesslist">
       {businesses.map ((business) => {
-        return <Business business={business} key={business.name}/>;
+        return <Business className='list' business={business} key={business.name}/>;
       })}
       </div>
       );
