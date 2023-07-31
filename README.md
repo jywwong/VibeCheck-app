@@ -1,2 +1,2 @@
-# Dineout-app
-Dineout is a restaurant search app built using HTML, CSS, Javascript and React.
+# VibeCheck - app
+Vibe Check is a resturant and venue search app built with React. Plan your day out by keywords (e.g. pool, drinks, pizza) and location (e.g. London, Chicago, Hong Kong), and refine search results by 'Best match', 'Highest rated' and 'Most reviewed'.
