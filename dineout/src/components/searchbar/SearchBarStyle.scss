@@ -1,11 +1,12 @@
 .SearchComponent {
-     display: flex;
+  display: flex;
   flex-direction: column;
   background-image: url("https://images.unsplash.com/photo-1583244532610-2a234e7c3eca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25rem;
+  height: 35rem;
+  width: 100%;
 
   ul {
 display: flex;
@@ -16,7 +17,7 @@ display: flex;
 
 .SearchBarSortOptions li {
   cursor: pointer;
-  width: 4.33rem;
+  width: 70%;
   border-bottom: 1px solid #fff;
   padding: 0 2.58rem 0.33rem 2.58rem;
   line-height: 1.13;
@@ -25,25 +26,26 @@ display: flex;
   font-size: 0.83rem;
   transition: color 0.25s;
   list-style: none;
-}
+  background:none;
+  &:hover {
+    color: rgb(238,174,202);
+  }
 
-&:hover {
-  color: #d4cfcf;
-}
+  &:active {
+    color: #d4cfcf;
+  }
 
-&:active {
-  color: #d4cfcf;
-}
-
-&:active:hover {
-  border-bottom: 1px solid #f0c36c;
-  color: #f0c36c;
+  &:active:hover {
+    border-bottom: 1px solid rgb(73, 43, 220);
+    color: rgb(73, 43, 220);
+  }
 }
 
 .SearchBarFields {
   display: flex;
   justify-content: center;
   margin-bottom: 2.88rem;
+  background: none;
 
   input {
     width: 21rem;
@@ -53,10 +55,22 @@ display: flex;
     border-radius: 4px;
     font-size: 0.77rem;
     font-weight: 500;
+    background: rgb(238,174,202, 0.3);
+    border:rgb(73, 43, 220);
+    color: rgb(238,174,202);
   }
+  
+  input::placeholder {
+    color: rgb(73, 43, 220);
+    opacity: 1;
+    }
+
+    input:focus {
+      color: rgb(238,174,202);
+    }
 }
 
-.submit {
+.submit-container {
   text-align: center;
 
   button {

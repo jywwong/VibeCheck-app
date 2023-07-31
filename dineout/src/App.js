@@ -13,16 +13,14 @@ function App() {
   };
 
   return (
-    <div className="App">
-        <h1>
-        Vibe Check
-        </h1>
-        <p>
-        Check out resturants or venues in the area before you go!
-        </p>
-        <SearchBar searchYelp={searchYelp}/>
-        <BusinessList businesses={businesses}/>
-    </div>
+    <container className="app-container" >
+        <container className="app-header">
+        <h1>Vibe Check</h1>
+        <p>Check out resturants or venues in the area before you go!</p>
+        </container>
+        <SearchBar searchYelp={searchYelp} className="searchBar"/>
+        <BusinessList businesses={businesses} className="businessList"/>
+    </container>
   );
 }
 

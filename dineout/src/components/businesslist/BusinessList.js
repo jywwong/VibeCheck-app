@@ -4,7 +4,7 @@ import styles from './businesslist.scss'
 
 const BusinessList = ({businesses}) => {
   return(
-    <div classname="businesslist">
+    <div className="businessList">
       {businesses.map ((business) => {
         return <Business className='list' business={business} key={business.name}/>;
       })}

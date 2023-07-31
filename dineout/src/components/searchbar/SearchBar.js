@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import SearchBarStyle from './SearchBarStyle.scss';
+import './SearchBarStyle.scss';
+import Button from '@mui/material/Button';
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -62,10 +63,10 @@ return (
 </div>
 <form onSubmit= {handleSearch}>
 <div className="SearchBarFields">
-<input type="text" className="searchterm" placeholder="Japanese" onChange={handleSearchTerm} />
-<input type="text" className="location" placeholder="London" onChange={handleLocation}/>
+<input type="text" className="searchterm" placeholder="What do you want to do?" onChange={handleSearchTerm} />
+<input type="text" className="location" placeholder="Where are you?" onChange={handleLocation}/>
 </div>
-<div className="submit">
+<div className="submit-container">
 <button type="submit">Search</button>
 </div>
 </form>
