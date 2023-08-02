@@ -8,24 +8,24 @@ const Yelp = {
                     Authorization: `Bearer ${apiKey}`,
                 },
             }
-            )
+        )
             .then((response) => {
-            return response.json();
+                return response.json();
             })
             .then((jsonResponse) => {
                 if (jsonResponse.businesses) {
                     return jsonResponse.businesses.map((business) => ({
-                            id: business.id,
-                            imageURL: business.image_url,
-                            name: business.name,
-                            address: business.location.address1,
-                            city: business.location.city,
-                            category: business.categories[0].title,
-                            rating: business.rating,
-                            reviewCount: business.review_count,
-                        }));
-            }
-        });
+                        id: business.id,
+                        imageURL: business.image_url,
+                        name: business.name,
+                        address: business.location.address1,
+                        city: business.location.city,
+                        category: business.categories[0].title,
+                        rating: business.rating,
+                        reviewCount: business.review_count,
+                    }));
+                }
+            });
     },
 };
 
